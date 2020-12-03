@@ -10,8 +10,11 @@
     Name: <form:input path="name"/><br><br>
     Surname: <form:input path="surname"/><br><br>
     Salary: <form:input path="salary"/><br><br>
-    Department: <form:input path="department"/><br><br>
-    <input type="submit" value="OK">
+    Department: <form:select path="department"><br><br>
+    <form:options items="${employee.departments}" />
+<%--    <form:option value="Human Resources" label="HR" />--%>
+    </form:select>
+<input type="submit" value="OK">
 </form:form>
 </body>
 </html>
