@@ -13,7 +13,10 @@
     Department: <form:select path="department"><br><br>
     <form:options items="${employee.departments}" />
 <%--    <form:option value="Human Resources" label="HR" />--%>
-    </form:select>
+    </form:select><br><br>
+    What car to your want:
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"></form:radiobuttons><br><br>
+<%--    BMV <form:radiobutton path="carBrand" value="BMV"></form:radiobutton>--%>
 <input type="submit" value="OK">
 </form:form>
 </body>
